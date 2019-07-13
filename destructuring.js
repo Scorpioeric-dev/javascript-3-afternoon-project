@@ -71,8 +71,11 @@ console.log()
 */
 
 function ingredients(obj){
-  let{carb,fat,protien} = obj
-  console.log(ingredients)
+  let{carb,fat,protein} = obj
+  let arr = []
+  arr.push(carb,fat,protein)
+  console.log(arr)
+  return arr
 }
 
 ////////// PROBLEM 5 //////////
@@ -91,7 +94,13 @@ function ingredients(obj){
 
 
   function largeNumbers({first,second,third}){
-console.log()
+if(first<second && first<third){
+  return first
+} else if (second<third){
+  return second
+} else {
+  return third
+}
   }
 
 
@@ -107,5 +116,14 @@ console.log()
 */
 
 //Code Here
+function numberGroups({a,b,c}){
+  if(a.length>b.length && a.length>c.length){
+    return a
+  } else if (b.length>c.length && b.length>c.length){
+    return b
+  } else {
+    return c
+  }
 
+}
 
